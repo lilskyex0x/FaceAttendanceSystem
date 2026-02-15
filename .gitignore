@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+log.txt
+
+# Data / generated files
+dataset/
+encodings.pickle
+*.csv
+
+# Build outputs
+build/
+dist/
+
+# macOS / editor
+.DS_Store
+.idea/
+.vscode/

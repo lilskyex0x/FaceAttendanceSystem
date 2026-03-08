@@ -1,3 +1,5 @@
+# NOTE: Unused style definition. Safe to remove or integrate into the UI later.
+
 NEON_STYLE = """
 QWidget {
     background-color: #0b0f1a;

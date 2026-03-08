@@ -2,6 +2,9 @@ from PyQt5.QtCore import QThread, pyqtSignal
 from model.face_model import FaceModel
 import os
 
+# NOTE: Legacy encoder worker, not compatible with current FaceModel
+# (uses add_encoding/save which no longer exist) and not used anywhere.
+
 class EncodeWorker(QThread):
     finished = pyqtSignal()
 

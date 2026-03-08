@@ -97,6 +97,18 @@ class MainWindow(QWidget):
     #               ATTENDANCE
     # ==========================================
     def start_attendance(self):
+        if not self.face_model.has_registered_students():
+            QMessageBox.warning(
+                self,
+                "No Registered Students",
+                "No registered student data found.\n"
+                "Please collect new student data before taking attendance."
+            )
+            self.status_label.setText(
+                "No registered students. Please collect data first."
+            )
+            return
+
         self.camera.start_attendance()
         self.status_label.setText("Attendance running...")
 

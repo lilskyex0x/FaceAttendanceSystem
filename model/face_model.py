@@ -34,6 +34,9 @@ class FaceModel:
                 self.known_encodings = data.get("encodings", [])
                 self.known_names = data.get("names", [])
 
+    def has_registered_students(self):
+        return bool(self.known_encodings)
+
     # --------------------------------------------------
     # FACE DETECTION
     # --------------------------------------------------
